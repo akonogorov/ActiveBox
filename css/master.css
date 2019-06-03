@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing:
+        antialiased;
+
+
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/** Container
+============================*/
+
+.container {
+    width: 100%;
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+
+/** Header
+============================*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    padding: 38px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #505268;
+    align-items: center;
+}
+
+
+/** Navigation
+============================*/
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    margin-left: 60px;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/** Intro
+============================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 103px;
+
+    background: #2a2d48 url("../img/intro-bg.jpg") center no-repeat / cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    margin: 0 0 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+smoothing {
+   text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+   1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+   1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+/** Button
+============================*/
+.btn {
+    display: inline-block;/*???*/
+    vertical-align: top;
+    padding: 14px 40px;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn--red {
+    background-color: #e84545;
+
+}
+
+.btn--red:hover {
+    border-color: #dd3434;
+}
+
+
